@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-family: 'Roboto-Bold';
+}
+
+@font-face {
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: 'Poppins-Regular';
+}
+
+body {
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+@theme {
+  --font-primary: 'Roboto-Bold';
+  --font-secondary: 'Poppins-Regular';
+  --color-primary:#2A8E9E;
+  --color-secondary:#023347;
+  --color-base:#093048;
+  --color-light:#F5F9FA;
+}
